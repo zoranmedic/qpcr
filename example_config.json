@@ -1,0 +1,23 @@
+{
+    "train_papers_path": "data/train_papers.json",
+    "train_sentences_path": "date/train_sentences.json",
+    "train_second_neighbours_path": "data/train_papers_second_neighbours.json",
+
+    "val_citing_papers_path": "data/val_citing_papers.json",
+    "val_sentences_path": "data/acl_expanded_data/val_sentences.json",
+    "val_pool_papers_path": "data/val_pool_papers.json",
+    "val_pool_set_path": "data/val_pool_set_per_citing_paper.json",
+    
+    "pretrained_model": "malteos/scincl",
+    "instances": "quadruplet",
+    "num_epochs": 10,
+    "train_batch_size": 4,
+    "val_batch_size": 8,
+    "batch_accum": 8,
+    "margin": 0.5,
+    "gpu": 0,
+    "learning_rate": 1e-05,
+    "warmup_steps_ratio": 0.1,
+    "query_information": "title_abstract_sentence",
+    "weight_decay": 0.01
+}
